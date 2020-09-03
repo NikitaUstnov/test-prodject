@@ -13,89 +13,109 @@
 
   <body>
     <!-- _header -->
-    <header class="container">
-      <div>
-        <ul class="contacts-header">
-          <li>
-            <a href="tel:+380000000000">
-              <svg width="16" height="16">
-                <use href="./icon-pack.svg#icon-call-answer1"></use>
-              </svg>
-              +38 (000) 000 00 00
-            </a>
-          </li>
-          <li>
-            <a href="mailto:test@i.ua">
-              <svg width="19" height="19">
-                <use href="./icon-pack.svg#icon-envelope"></use>
-              </svg>
-              test@i.ua</a
-            >
-          </li>
-        </ul>
-        <h1><span>ОСББ</span> "Тест"</h1>
-        <ul class="reg">
-          <li>
-            <a href="#">
-              <svg width="41" height="30">
-                <use href="./icon-pack.svg#icon-enter"></use>
-              </svg>
-              <span>Вход</span>
-            </a>
-          </li>
-          <li>
-            <a href="#"> <span>Регистрация</span></a>
-          </li>
-        </ul>
+    <header>
+      <div class="header-bg">
+        <div class="container header-wrapper">
+          <ul class="contacts-header">
+            <li class="cont-header-list">
+              <a href="tel:+380000000000" class="cont-links">
+                <svg width="16" height="16">
+                  <use href="./icon-pack.svg#icon-call-answer1"></use>
+                </svg>
+                +38 (000) 000 00 00
+              </a>
+            </li>
+            <li>
+              <a href="mailto:test@i.ua" class="cont-links">
+                <svg width="19" height="19">
+                  <use href="./icon-pack.svg#icon-envelope"></use>
+                </svg>
+                test@i.ua</a
+              >
+            </li>
+          </ul>
+
+          <ul class="reg">
+            <li>
+              <a class="entry-item" href="#">
+                <svg>
+                  <use href="./icon-pack.svg#icon-enter"></use>
+                </svg>
+                <span>Вход</span>
+              </a>
+            </li>
+            <li class="reist-item">
+              <a href="#"> <span>Регистрация</span></a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="">Главная</a></li>
-          <li><a href="">Объявления</a></li>
-          <li><a href="">Управление ОСМД</a></li>
-          <li><a href="">Отчетность деятельности</a></li>
-          <li><a href="">Форум для жителей</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav class="container nav-wrapper">
+        <h1 class="logo-header">
+          <span class="lg-green">ОСББ</span><span class="lg-grey">"Тест"</span>
+        </h1>
+        <button class="menu-btn">
+          <svg
+            width="36"
+            height="15"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./icon-pack.svg#icon-menu-btn"></use>
+          </svg>
+        </button>
+        <ul class="site-nav">
+          <li><a class="site-nav-links" href="#">Главная</a></li>
+          <li><a class="site-nav-links" href="#">Объявления</a></li>
+          <li><a class="site-nav-links" href="#">Управление ОСМД</a></li>
+          <li>
+            <a class="site-nav-links" href="#">Отчетность деятельности</a>
+          </li>
+          <li><a class="site-nav-links" href="#">Форум для жителей</a></li>
+          <li><a class="site-nav-links" href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- _hero -->
-      <section class="container">
-        <div>
-          <h2>
-            Зарегистрируйтесь сейчас<br />
-            <span>чтобы знать новости первым!</span>
-          </h2>
-          <div>
-            <form>
-              <input placeholder="Ваше имя" />
-              <input type="tel" placeholder="Ваш номер телефона" />
-              <button type="submit">Готово!</button>
-            </form>
-          </div>
-          <ul>
-            <li>
-              <svg width="56" height="56">
-                <use href="./img/reg.svg"></use>
-              </svg>
-              <p>Регистрируетесь</p>
-            </li>
-            <li>
-              <svg width="59" height="59">
-                <use href="./img/allNews.svg"></use>
-              </svg>
-              <p>Вкурсе всех новостей</p>
-            </li>
-            <li>
-              <svg width="55" height="55">
-                <use href="./img/manual.svg"></use>
-              </svg>
-              <p>Просто и понятно</p>
-            </li>
-          </ul>
+      <div class="hero-bg">
+        <div class="blur">
+          <section class="container">
+            <div class="reg-window">
+              <h2>
+                Зарегистрируйтесь сейчас<br />
+                <span>чтобы знать новости первым!</span>
+              </h2>
+              <div>
+                <form>
+                  <input placeholder="Ваше имя" />
+                  <input type="tel" placeholder="Ваш номер телефона" />
+                  <button type="submit">Готово!</button>
+                </form>
+              </div>
+              <ul>
+                <li>
+                  <svg width="56" height="56">
+                    <use href="./img/reg.svg"></use>
+                  </svg>
+                  <p>Регистрируетесь</p>
+                </li>
+                <li>
+                  <svg width="59" height="59">
+                    <use href="./img/allNews.svg"></use>
+                  </svg>
+                  <p>Вкурсе всех новостей</p>
+                </li>
+                <li>
+                  <svg width="55" height="55">
+                    <use href="./img/manual.svg"></use>
+                  </svg>
+                  <p>Просто и понятно</p>
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
       <!-- _objects -->
       <section class="container">
         <h2>последние фото</h2>

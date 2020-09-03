@@ -1,0 +1,28 @@
+.hero-bg {
+  width: 100%;
+  min-width: 374px;
+
+  height: auto;
+  background-image: url(/img/mob-hero.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero-bg {
+      background-image: url(/img/mob-hero@2x.jpg);
+    }
+  }
+}
+.blur {
+  backdrop-filter: blur(1px);
+  height: 248px;
+}
+
+.reg-window {
+  background: rgba(47, 45, 55, 0.25);
+  backdrop-filter: blur(5.92381px);
+  border-radius: 3.70238px;
+}
