@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Muli;
+  src: url(../fonts/Muli-Regular.ttf) url(../fonts/Muli-SemiBold.ttf)
+    url(../fonts/Muli-Black.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto&display=swap");
+@import "./utils/body";
+@import "./utils/utils";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/objects";
+@import "./components/price";
+@import "./components/footer";
+
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Muli' , sans-serif;

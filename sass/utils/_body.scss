@@ -1,0 +1,73 @@
+body {
+  font-family: "Muli", sans-serif;
+  background-color: #0f0f0f;
+}
+
+section {
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  @media screen and (min-width: 767px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.container {
+  padding: 0;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 375px) {
+    width: 345px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 708px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1145px;
+
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
