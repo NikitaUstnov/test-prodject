@@ -1,28 +1,146 @@
 .hero-bg {
+  padding-top: 25px;
+  padding-bottom: 27px;
+  padding-right: 15px;
+  padding-left: 15px;
+
   width: 100%;
   min-width: 374px;
-
   height: auto;
-  background-image: url(/img/mob-hero.jpg);
+  background-image: url(../img/mob-hero.jpg);
+  
 
   background-repeat: no-repeat;
   background-position: center;
+
+ 
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-bg {
-      background-image: url(/img/mob-hero@2x.jpg);
+      background-image: url(../img/mob-hero@2x.jpg);
+     
     }
   }
 }
-.blur {
-  backdrop-filter: blur(1px);
-  height: 248px;
-}
+ 
 
 .reg-window {
+  padding-top: 11px;
+  padding-right: 18px;
+  padding-left: 18px;
+padding-bottom: 19px;
+
+
   background: rgba(47, 45, 55, 0.25);
-  backdrop-filter: blur(5.92381px);
   border-radius: 3.70238px;
+
+  &::before {
+    content: "";
+    z-index: 10;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+}
+
+.decription-reg {
+  display: none;
+}
+
+.reg-window-header {
+  margin-bottom: 17px;
+
+
+
+font-family: 'Open sans';
+font-weight: 900;
+font-size: 21px;
+text-align: center;
+color: #FFFFFF;
+
+}
+.reg-window-header span {
+  font-family: 'Open sans';
+font-size: 15px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.reg-form {
+  display: flex;
+  justify-content: space-between;
+
+
+  padding: 9px 10px;
+  margin-bottom: 8px;
+
+
+  background: #FFFFFF;
+border-radius: 37px;
+}
+
+.reg-form-items-name{
+  width: 114px;
+}
+.reg-form-items-tel{
+  width: 162px;
+}
+
+.reg-form-items {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 11px;
+ 
+  background: #FFFFFF;
+  border: 1px solid #6E788D;
+border-radius: 37px;
+
+
+
+&::placeholder {
+margin-right: 44px;
+
+font-family: 'Open sans';
+font-size: 12px;
+line-height: 15px;
+color: #6E788D;
+   }  
+}
+
+.hero-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+
+width: 102px;
+height: 42px;
+
+margin-left: auto;
+margin-right: auto;
+
+background: #FFFFFF;
+border-radius: 37px;
+
+}
+
+.hero-btn-item{
+width: 87px;
+height: 30px;
+background-color: #86BC42;
+outline: none;
+border: none;
+border-radius: 37px;
+
+
+font-family:'Open sans';
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
 }

@@ -285,10 +285,11 @@ a {
 @media screen and (min-width: 1280px) {
   .logo-header {
     position: absolute;
+    margin-right: auto;
+    margin-left: auto;
     top: 0;
-    left: 0;
-    -webkit-transform: translate(480px, 9px);
-            transform: translate(480px, 9px);
+    -webkit-transform: translate(330%, 9px);
+            transform: translate(330%, 9px);
   }
 }
 
@@ -372,30 +373,175 @@ a {
 }
 
 .hero-bg {
+  padding-top: 25px;
+  padding-bottom: 27px;
+  padding-right: 15px;
+  padding-left: 15px;
   width: 100%;
   min-width: 374px;
   height: auto;
-  background-image: url(/img/mob-hero.jpg);
+  background-image: url(../img/mob-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-bg .hero-bg {
-    background-image: url(/img/mob-hero@2x.jpg);
+    background-image: url(../img/mob-hero@2x.jpg);
   }
 }
 
-.blur {
-  -webkit-backdrop-filter: blur(1px);
-          backdrop-filter: blur(1px);
-  height: 248px;
+.reg-window {
+  padding-top: 11px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 19px;
+  background: rgba(47, 45, 55, 0.25);
+  border-radius: 3.70238px;
 }
 
-.reg-window {
-  background: rgba(47, 45, 55, 0.25);
-  -webkit-backdrop-filter: blur(5.92381px);
-          backdrop-filter: blur(5.92381px);
-  border-radius: 3.70238px;
+.reg-window::before {
+  content: "";
+  z-index: 10;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.decription-reg {
+  display: none;
+}
+
+.reg-window-header {
+  margin-bottom: 17px;
+  font-family: 'Open sans';
+  font-weight: 900;
+  font-size: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.reg-window-header span {
+  font-family: 'Open sans';
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.reg-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 9px 10px;
+  margin-bottom: 8px;
+  background: #FFFFFF;
+  border-radius: 37px;
+}
+
+.reg-form-items-name {
+  width: 114px;
+}
+
+.reg-form-items-tel {
+  width: 162px;
+}
+
+.reg-form-items {
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 11px;
+  background: #FFFFFF;
+  border: 1px solid #6E788D;
+  border-radius: 37px;
+}
+
+.reg-form-items::-webkit-input-placeholder {
+  margin-right: 44px;
+  font-family: 'Open sans';
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E788D;
+}
+
+.reg-form-items:-ms-input-placeholder {
+  margin-right: 44px;
+  font-family: 'Open sans';
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E788D;
+}
+
+.reg-form-items::-ms-input-placeholder {
+  margin-right: 44px;
+  font-family: 'Open sans';
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E788D;
+}
+
+.reg-form-items::placeholder {
+  margin-right: 44px;
+  font-family: 'Open sans';
+  font-size: 12px;
+  line-height: 15px;
+  color: #6E788D;
+}
+
+.hero-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 102px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFFF;
+  border-radius: 37px;
+}
+
+.hero-btn-item {
+  width: 87px;
+  height: 30px;
+  background-color: #86BC42;
+  outline: none;
+  border: none;
+  border-radius: 37px;
+  font-family: 'Open sans';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header-objects {
+  margin-bottom: 13px;
+  font-family: 'Open sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6E788D;
+}
+
+.header-objects {
+  font-family: 'Open sans';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #6E788D;
 }
 /*# sourceMappingURL=main.css.map */

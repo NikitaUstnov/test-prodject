@@ -149,10 +149,12 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
 
+    margin-right: auto;
+    margin-left: auto;
     top: 0;
-    left: 0;
+
     //  костыль
-    transform: translate(480px, 9px);
+    transform: translate(330%, 9px);
   }
 }
 .lg-green {

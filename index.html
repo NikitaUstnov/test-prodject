@@ -79,20 +79,21 @@
       <!-- _hero -->
       <div class="hero-bg">
         <div class="blur">
-          <section class="container">
+          <section class="container hero-container">
             <div class="reg-window">
-              <h2>
+              <h2 class="reg-window-header">
                 Зарегистрируйтесь сейчас<br />
                 <span>чтобы знать новости первым!</span>
               </h2>
               <div>
-                <form>
-                  <input placeholder="Ваше имя" />
-                  <input type="tel" placeholder="Ваш номер телефона" />
-                  <button type="submit">Готово!</button>
+                <form class="reg-form">
+                  <input class="reg-form-items reg-form-items-name" placeholder="Ваше имя" />
+                  <input class="reg-form-items reg-form-items-tel" type="tel" placeholder="Ваш номер телефона" />
+                 
                 </form>
+                <div class="hero-btn"><button class="hero-btn-item" type="submit">Готово!</button></div>
               </div>
-              <ul>
+              <ul class="decription-reg">
                 <li>
                   <svg width="56" height="56">
                     <use href="./img/reg.svg"></use>
@@ -118,7 +119,7 @@
       </div>
       <!-- _objects -->
       <section class="container">
-        <h2>последние фото</h2>
+        <h2 class="header-objects">последние фото</h2>
         <p>
           Мы создаем новый стиль управления жильем! Чем наш стиль работы
           отличается от других? Мы создаем территорию для комфортного,
