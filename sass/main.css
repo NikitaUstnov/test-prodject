@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Open sans", sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -30,14 +30,13 @@ body {
 }
 
 .container {
-  padding: 0;
   margin-right: auto;
   margin-left: auto;
 }
 
-@media screen and (max-width: 767) {
+@media screen and (max-width: 767px) {
   .container {
-    width: 345px;
+    width: 375px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -373,16 +372,13 @@ a {
 }
 
 .hero-bg {
-  padding-top: 25px;
-  padding-bottom: 27px;
-  padding-right: 15px;
-  padding-left: 15px;
   width: 100%;
   min-width: 374px;
   height: auto;
   background-image: url(../../img/mob-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -395,8 +391,6 @@ a {
   .hero-bg {
     background-image: url(../../img/tablet-hero.jpg);
     min-width: 768px;
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 
@@ -404,6 +398,11 @@ a {
   .hero-bg .hero-bg {
     background-image: url(../img/tablet-hero@2x.jpg);
   }
+}
+
+.hero-container {
+  padding-top: 25px;
+  padding-bottom: 27px;
 }
 
 .reg-window {
@@ -422,6 +421,12 @@ a {
   filter: blur(10px);
 }
 
+@media screen and (min-width: 768px) {
+  .reg-window {
+    padding: 34px 100px;
+  }
+}
+
 .decription-reg {
   display: none;
 }
@@ -438,6 +443,17 @@ a {
         justify-content: space-around;
     margin-bottom: 20px;
   }
+  .decription-reg li + li::before {
+    content: "";
+    width: 74px;
+    height: 1px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-125% 299%);
+            transform: translate(-125% 299%);
+  }
 }
 
 .descr-reg-title {
@@ -453,6 +469,12 @@ a {
   font-size: 12px;
   line-height: 15px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .descr-reg-title {
+    display: none;
+  }
 }
 
 .descr-reg-list {
@@ -520,26 +542,37 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 9px 10px;
   margin-bottom: 8px;
   background: #ffffff;
   border-radius: 37px;
 }
 
+@media screen and (min-width: 768px) {
+  .reg-form {
+    padding: 11px 13px;
+    margin-bottom: 35px;
+  }
+}
+
 .reg-form-items-name {
-  width: 114px;
+  width: 100%;
+  max-width: 114px;
 }
 
 .reg-form-items-tel {
-  width: 162px;
+  margin-left: 11px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .reg-form-items-tel {
+    margin-left: 16px;
+  }
 }
 
 .reg-form-items {
-  padding-top: 8px;
-  padding-bottom: 6px;
+  height: 30px;
   padding-left: 11px;
   background: #ffffff;
   border: 1px solid #6e788d;
@@ -548,7 +581,6 @@ a {
 
 .reg-form-items::-webkit-input-placeholder {
   margin-right: 44px;
-  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
   color: #6e788d;
@@ -556,7 +588,6 @@ a {
 
 .reg-form-items:-ms-input-placeholder {
   margin-right: 44px;
-  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
   color: #6e788d;
@@ -564,7 +595,6 @@ a {
 
 .reg-form-items::-ms-input-placeholder {
   margin-right: 44px;
-  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
   color: #6e788d;
@@ -572,13 +602,12 @@ a {
 
 .reg-form-items::placeholder {
   margin-right: 44px;
-  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
   color: #6e788d;
 }
 
-.hero-btn {
+.hero-btn-mob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -596,7 +625,13 @@ a {
   border-radius: 37px;
 }
 
-.hero-btn-item {
+@media screen and (min-width: 767px) {
+  .hero-btn-mob {
+    display: none;
+  }
+}
+
+.hero-btn-item-mob {
   width: 87px;
   height: 30px;
   background-color: #86bc42;
@@ -610,6 +645,41 @@ a {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 767px) {
+  .hero-btn-item-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-btn {
+    display: none;
+  }
+}
+
+.hero-btn-item {
+  margin-left: 16px;
+  width: 87px;
+  height: 30px;
+  background-color: #86bc42;
+  outline: none;
+  border: none;
+  border-radius: 37px;
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-btn-item {
+    display: none;
+  }
 }
 
 .header-objects {
