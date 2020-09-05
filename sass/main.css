@@ -380,14 +380,29 @@ a {
   width: 100%;
   min-width: 374px;
   height: auto;
-  background-image: url(../img/mob-hero.jpg);
+  background-image: url(../../img/mob-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-bg .hero-bg {
-    background-image: url(../img/mob-hero@2x.jpg);
+    background-image: url(../../img/mob-hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-bg {
+    background-image: url(../../img/tablet-hero.jpg);
+    min-width: 768px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-bg .hero-bg {
+    background-image: url(../img/tablet-hero@2x.jpg);
   }
 }
 
@@ -411,20 +426,94 @@ a {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .decription-reg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 20px;
+  }
+}
+
+.descr-reg-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: "Open sans";
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.descr-reg-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.descr-reg-icon1 {
+  width: 41px;
+  height: 41px;
+}
+
+.descr-reg-icon2 {
+  width: 44px;
+  height: 44px;
+}
+
+.descr-reg-icon3 {
+  width: 41px;
+  height: 41px;
+}
+
+.num {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-12px, -12px);
+          transform: translate(-12px, -12px);
+  font-family: "Open sans";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}
+
 .reg-window-header {
   margin-bottom: 17px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-weight: 900;
   font-size: 21px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .reg-window-header span {
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 15px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .reg-form {
@@ -436,7 +525,7 @@ a {
           justify-content: space-between;
   padding: 9px 10px;
   margin-bottom: 8px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 37px;
 }
 
@@ -452,41 +541,41 @@ a {
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 11px;
-  background: #FFFFFF;
-  border: 1px solid #6E788D;
+  background: #ffffff;
+  border: 1px solid #6e788d;
   border-radius: 37px;
 }
 
 .reg-form-items::-webkit-input-placeholder {
   margin-right: 44px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
-  color: #6E788D;
+  color: #6e788d;
 }
 
 .reg-form-items:-ms-input-placeholder {
   margin-right: 44px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
-  color: #6E788D;
+  color: #6e788d;
 }
 
 .reg-form-items::-ms-input-placeholder {
   margin-right: 44px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
-  color: #6E788D;
+  color: #6e788d;
 }
 
 .reg-form-items::placeholder {
   margin-right: 44px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-size: 12px;
   line-height: 15px;
-  color: #6E788D;
+  color: #6e788d;
 }
 
 .hero-btn {
@@ -503,24 +592,24 @@ a {
   height: 42px;
   margin-left: auto;
   margin-right: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 37px;
 }
 
 .hero-btn-item {
   width: 87px;
   height: 30px;
-  background-color: #86BC42;
+  background-color: #86bc42;
   outline: none;
   border: none;
   border-radius: 37px;
-  font-family: 'Open sans';
+  font-family: "Open sans";
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .header-objects {

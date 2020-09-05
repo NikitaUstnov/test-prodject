@@ -7,31 +7,41 @@
   width: 100%;
   min-width: 374px;
   height: auto;
-  background-image: url(../img/mob-hero.jpg);
-  
+  background-image: url(../../img/mob-hero.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
-
- 
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-bg {
-      background-image: url(../img/mob-hero@2x.jpg);
-     
+      background-image: url(../../img/mob-hero@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../../img/tablet-hero.jpg);
+    min-width: 768px;
+
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-bg {
+        background-image: url(../img/tablet-hero@2x.jpg);
+      }
     }
   }
 }
- 
 
 .reg-window {
   padding-top: 11px;
   padding-right: 18px;
   padding-left: 18px;
-padding-bottom: 19px;
-
+  padding-bottom: 19px;
 
   background: rgba(47, 45, 55, 0.25);
   border-radius: 3.70238px;
@@ -46,45 +56,93 @@ padding-bottom: 19px;
 
 .decription-reg {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-bottom: 20px;
+  }
+}
+.descr-reg-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: "Open sans";
+  font-size: 12px;
+  line-height: 15px;
+
+  color: #ffffff;
+}
+.descr-reg-list {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descr-reg-icon1 {
+  width: 41px;
+  height: 41px;
+}
+.descr-reg-icon2 {
+  width: 44px;
+  height: 44px;
+}
+.descr-reg-icon3 {
+  width: 41px;
+  height: 41px;
+}
+
+.num {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(-12px, -12px);
+
+  font-family: "Open sans";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
 }
 
 .reg-window-header {
   margin-bottom: 17px;
 
-
-
-font-family: 'Open sans';
-font-weight: 900;
-font-size: 21px;
-text-align: center;
-color: #FFFFFF;
-
+  font-family: "Open sans";
+  font-weight: 900;
+  font-size: 21px;
+  text-align: center;
+  color: #ffffff;
 }
 .reg-window-header span {
-  font-family: 'Open sans';
-font-size: 15px;
-text-align: center;
+  font-family: "Open sans";
+  font-size: 15px;
+  text-align: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .reg-form {
   display: flex;
   justify-content: space-between;
 
-
   padding: 9px 10px;
   margin-bottom: 8px;
 
-
-  background: #FFFFFF;
-border-radius: 37px;
+  background: #ffffff;
+  border-radius: 37px;
 }
 
-.reg-form-items-name{
+.reg-form-items-name {
   width: 114px;
 }
-.reg-form-items-tel{
+.reg-form-items-tel {
   width: 162px;
 }
 
@@ -92,55 +150,50 @@ border-radius: 37px;
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 11px;
- 
-  background: #FFFFFF;
-  border: 1px solid #6E788D;
-border-radius: 37px;
 
+  background: #ffffff;
+  border: 1px solid #6e788d;
+  border-radius: 37px;
 
+  &::placeholder {
+    margin-right: 44px;
 
-&::placeholder {
-margin-right: 44px;
-
-font-family: 'Open sans';
-font-size: 12px;
-line-height: 15px;
-color: #6E788D;
-   }  
+    font-family: "Open sans";
+    font-size: 12px;
+    line-height: 15px;
+    color: #6e788d;
+  }
 }
 
-.hero-btn{
-display: flex;
-align-items: center;
-justify-content: center;
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-width: 102px;
-height: 42px;
+  width: 102px;
+  height: 42px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-background: #FFFFFF;
-border-radius: 37px;
-
+  background: #ffffff;
+  border-radius: 37px;
 }
 
-.hero-btn-item{
-width: 87px;
-height: 30px;
-background-color: #86BC42;
-outline: none;
-border: none;
-border-radius: 37px;
+.hero-btn-item {
+  width: 87px;
+  height: 30px;
+  background-color: #86bc42;
+  outline: none;
+  border: none;
+  border-radius: 37px;
 
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
 
-font-family:'Open sans';
-font-weight: 600;
-font-size: 12px;
-line-height: 15px;
-text-align: center;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
+  color: #ffffff;
 }
