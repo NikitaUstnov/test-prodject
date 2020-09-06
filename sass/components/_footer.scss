@@ -1,0 +1,112 @@
+.footer-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.footer-logo {
+  margin-top: 38px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: center;
+
+  color: #6e788d;
+}
+
+.logo-green {
+  color: #86bc42;
+}
+
+.footer-text {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-top: 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25em;
+  text-align: center;
+
+  color: #9ca3ab;
+}
+
+.social-link {
+  margin-top: 26px;
+}
+
+.footer-dark {
+  margin-top: 36px;
+
+  background: #4b5464;
+}
+
+.header-footer {
+  margin-top: 28px;
+  margin-bottom: 21px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  margin-right: 50px;
+
+  list-style-image: url(../../img/Arrow.svg);
+}
+
+.nav-list:last-child {
+  margin-right: 0;
+}
+
+.nav-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+  color: #86bc42;
+}
+
+.contacts-list {
+  padding-bottom: 23px;
+}
+.contacts-icon {
+  margin-right: 9px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5em;
+
+  color: #ffffff;
+}
+
+.contacts.mail {
+  margin-top: 11px;
+
+  font-weight: 400;
+}

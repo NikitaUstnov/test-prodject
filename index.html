@@ -15,7 +15,7 @@
     <!-- _header -->
     <header>
       <div class="header-bg">
-        <div class="container header-wrapper">
+        <div class="header-wrapper">
           <ul class="contacts-header">
             <li class="cont-header-list">
               <a href="tel:+380000000000" class="cont-links">
@@ -283,116 +283,186 @@
       </section>
       <!-- _price -->
       <section>
-        <div class="container">
-          <div>
-            <h2>тарифы</h2>
-            <form>
-              <label>
-                Введите площадь вашего дома (кв/м)
-                <input type="number" />
-              </label>
-              <label>
-                Введите количество квартир
-                <input type="number" />
-              </label>
-              <label
-                >Количество месяцев <input type="radio" name="mounth" />3 мес.
-              </label>
-              <label> <input type="radio" name="mounth" />6 мес. </label>
-              <label> <input type="radio" name="mounth" />12 мес. </label>
-            </form>
-          </div>
-          <div>
-            <p>*Цена на услугу в целом - 600.00 грн.</p>
-            <p>**Сумма на одну квартиру в месяц - 600.00 грн.</p>
-            <div>
-              <svg width="32" height="32">
-                <use href="./icon-pack.svg#icon-inform"></use>
-              </svg>
-              <p>
-                Начиная с момента регистрации ОСМД на сайте предоставляется
-                <span>90 дней БЕСПЛАТНОГО</span> использования сервиса.
-              </p>
+        <div class="price-bg">
+          <div class="container">
+            <div class="forms-price">
+              <h2 class="header-price">тарифы</h2>
+
+              <form class="appartment-information">
+                <label class="price-form-label" for="house-square">
+                  Введите площадь вашего дома (кв/м)
+                </label>
+                <input
+                  class="appartment-input"
+                  type="number"
+                  name="house-square"
+                  placeholder="2000"
+                />
+
+                <label class="price-form-label" for="rooms-number">
+                  Введите количество квартир
+                </label>
+                <input
+                  class="appartment-input"
+                  type="number"
+                  name="rooms-number"
+                  placeholder="56"
+                />
+              </form>
+
+              <p class="price-form-label">Количество месяцев</p>
+              <form>
+                <input
+                  class="period-input"
+                  type="radio"
+                  id="three-mounth"
+                  name="mounth"
+                />
+                <label class="period" for="three-mounth">3 мес.</label>
+
+                <input
+                  class="period-input"
+                  type="radio"
+                  id="six-month"
+                  name="mounth"
+                />
+                <label class="period" for="six-month">6 мес. </label>
+
+                <input
+                  class="period-input"
+                  type="radio"
+                  id="twelve-month"
+                  name="mounth"
+                />
+                <label class="period" for="twelve-month">12 мес. </label>
+              </form>
+
+              <div class="price-container">
+                <p class="price-information">
+                  *Цена на услугу в целом - 600.00 грн.
+                </p>
+                <p class="price-information">
+                  **Сумма на одну квартиру в месяц - 600.00 грн.
+                </p>
+
+                <div class="clarification-container">
+                  <svg width="32" height="32">
+                    <use href="./icon-pack.svg#icon-inform"></use>
+                  </svg>
+                  <p class="clarification">
+                    Начиная с момента регистрации ОСМД на сайте предоставляется
+                    <span class="clarification-green">90 дней БЕСПЛАТНОГО</span>
+                    использования сервиса.
+                  </p>
+                </div>
+                <p class="price">Стоимость: 0.00 грн</p>
+              </div>
             </div>
           </div>
-          <p>Стоимость: 0.00 грн</p>
         </div>
       </section>
-      <!-- _information -->
-      <section>
+      <!-- _last-news -->
+      <section class="last-news-section">
         <div class="container">
-          <h2>последние новости</h2>
+          <h2 class="last-news-header">последние новости</h2>
 
-          <article>
-            <h3>Повышение контроля руководства за деятельностью ОСББ.</h3>
-            <p>
-              Информирование о текущем балансе, сохранение истории платежей,
-              начисление квартплат. Информирование о текущем балансе, сохранение
-              истории платежей, начисление квартплат. Информирование о текущем
-              балансе, сохранение истории платежей, начисление квартплат.
-            </p>
-            <p>
-              Информирование о текущем балансе, сохранение истории платежей,
-              начисление квартплат.Информирование о текущем балансе, сохранение
-              истории платежей, начисление квартплат.
-            </p>
-          </article>
-          <a href="#"
-            ><span>Читать полностью</span>
-            <svg width="37" height="8">
-              <use href="./img/green-arrow.svg"></use>
-            </svg>
-          </a>
-
-          <div>
+          <div class="deck-building">
             <img
-              src="./img/mob-building.jpg"
               alt="building"
-              srcset="./img/mob-building@2x.jpg 2x"
+              src="./img/deck-building.jpg"
+              srcset="./img/deck-building@2x.jpg 2x"
             />
           </div>
 
+          <article class="news">
+            <h3 class="news-description">
+              Повышение контроля руководства за деятельностью ОСББ.
+            </h3>
+
+            <div class="mob-building">
+              <img
+                alt="building"
+                src="./img/mob-building.jpg"
+                srcset="./img/mob-building@2x.jpg 2x"
+              />
+            </div>
+            <div class="tab-building">
+              <img
+                alt="building"
+                src="./img/tab-building.jpg"
+                srcset="./img/tab-building@2x.jpg 2x"
+              />
+            </div>
+            <div class="news-inform">
+              <p class="news-text">
+                Информирование о текущем балансе, сохранение истории платежей,
+                начисление квартплат. Информирование о текущем балансе,
+                сохранение истории платежей, начисление квартплат.
+                Информирование о текущем балансе, сохранение истории платежей,
+                начисление квартплат.
+              </p>
+              <p class="news-text">
+                Информирование о текущем балансе, сохранение истории платежей,
+                начисление квартплат.Информирование о текущем балансе,
+                сохранение истории платежей, начисление квартплат.
+              </p>
+            </div>
+            <a class="read-more" href="#"
+              >Читать полностью
+              <svg width="37" height="8">
+                <use href="./green-arrow.svg#icon-green-arrow"></use>
+              </svg>
+            </a>
+          </article>
           <div class="scroll">
-            <button>
-              <svg width="49" height="1">
-                <use href="./img/Arrow-left.svg"></use>
+            <button class="scroll-btn">
+              <svg width="49" height="6">
+                <use href="./Arrows.svg#icon-Arrow-left"></use>
               </svg>
             </button>
-            <svg width="6" height="6">
-              <use href="./icon-pack.svg#icon-scroll-point"></use>
-            </svg>
-            <svg width="6" height="6">
-              <use href="./icon-pack.svg#icon-scroll-point"></use>
-            </svg>
-            <svg width="21" height="21">
-              <use href="./icon-pack.svg#icon-scroll-elipce"></use>
-            </svg>
-            <svg width="6" height="6">
-              <use href="./icon-pack.svg#icon-scroll-point"></use>
-            </svg>
+            <div class="scroll-points">
+              <svg width="6" height="6">
+                <use href="./icon-pack.svg#icon-scroll-point"></use>
+              </svg>
+              <svg width="21" height="21">
+                <use href="./icon-pack.svg#icon-scroll-elipce"></use>
+              </svg>
+              <svg width="6" height="6">
+                <use href="./icon-pack.svg#icon-scroll-point"></use>
+              </svg>
 
-            <button>
-              <svg width="49" height="1">
-                <use href="./icon-pack.svg#icon-Arrow-right"></use>
+              <svg width="6" height="6">
+                <use href="./icon-pack.svg#icon-scroll-point"></use>
+              </svg>
+            </div>
+
+            <button class="scroll-btn">
+              <svg width="49" height="6">
+                <use href="./Arrows.svg#icon-Arrow-right"></use>
               </svg>
             </button>
           </div>
 
-          <button type="button">смотреть все новости</button>
+          <button class="button" type="button">
+            <span class="button-text">смотреть все новости</span>
+          </button>
         </div>
       </section>
     </main>
     <!-- _footer -->
     <footer>
       <div class="container">
-        <article>
-          <h4>ОСББ "Тест"</h4>
-          <p>
+        <div class="footer-light">
+          <h4 class="footer-logo logo">
+            <span class="logo-green">ОСББ</span> "Тест"
+          </h4>
+          <p class="footer-text">
             Огромное количество успешных проектов, не оставило нашу компанию без
             драгоценного опыта.
           </p>
-          <p>Мы профессионалы своего дела!</p>
-          <div>
+          <p class="footer-text">Мы профессионалы своего дела!</p>
+    
+          <div class="social-link">
             <svg width="21" height="21">
               <use href="./icon-pack.svg#icon-twitter"></use>
             </svg>
@@ -403,42 +473,44 @@
               <use href="./icon-pack.svg#icon-telegram"></use>
             </svg>
           </div>
-        </article>
-
-        <div>
+        </div>
+    
+        <div class="footer-dark">
           <nav>
-            <h4>навигация</h4>
-            <ul>
-              <li>> Главная</li>
-              <li>> Объявления</li>
-              <li>> Управление ОСМД</li>
-              <li>> Отчетность деятельности</li>
-            </ul>
-            <ul>
-              <li>> Форум для жителей</li>
-              <li>> Контакты</li>
-              <li>> Регистрация</li>
-              <li>> Войти</li>
+            <h4 class="header-footer">навигация</h4>
+            <div class="navigation">
+              <ul class="nav-list">
+                <li><a class="nav-list-link" href="./">Главная</a></li>
+                <li><a class="nav-list-link" href="./">Объявления</a></li>
+                <li><a class="nav-list-link" href="./">Управление ОСМД</a></li>
+                <li><a class="nav-list-link" href="./">Отчетность деятельности</a></li>
+              </ul>
+              <ul class="nav-list">
+                <li><a class="nav-list-link" href="./">Форум для жителей</a></li>
+                <li><a class="nav-list-link" href="./">Контакты</a></li>
+                <li><a class="nav-list-link" href="./">Регистрация</a></li>
+                <li><a class="nav-list-link" href="./">Войти</a></li>
+            </div>
             </ul>
           </nav>
+    
           <div>
-            <h4>контакты</h4>
-            <ul>
+            <h4 class="header-footer">контакты</h4>
+            <ul class="contacts-list">
               <li>
-                <a href="tel:+380000000000">
-                  <svg width="16" height="16">
+                <a class="contacts" href="tel:+380000000000">
+                  <svg class="contacts-icon" width="16" height="16">
                     <use href="./icon-pack.svg#icon-call-answer1"></use>
                   </svg>
                   +38 (000) 000 00 00
                 </a>
               </li>
               <li>
-                <a href="mailto:test@i.ua">
-                  <svg width="19" height="19">
+                <a class="contacts mail" href="mailto:test@i.ua">
+                  <svg class="contacts-icon" width="19" height="19">
                     <use href="./icon-pack.svg#icon-envelope"></use>
                   </svg>
-                  test@i.ua</a
-                >
+                  test@i.ua</a>
               </li>
             </ul>
           </div>
