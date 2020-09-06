@@ -1,0 +1,136 @@
+.header-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-right: 9px;
+  margin-left: 9px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+
+  color: #6e788d;
+}
+
+.header-information::before {
+  margin-top: 39px;
+  margin-bottom: 16px;
+
+  content: "";
+  width: 105px;
+  height: 1px;
+
+  background-color: #9ca3ab;
+}
+
+.information-text {
+  margin-top: 25px;
+}
+
+.information-text-paragraph {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29em;
+  letter-spacing: 0.01em;
+
+  color: #9ca3ab;
+}
+
+.information-text-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.provider-container {
+  margin-top: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(10, 8, 84, 0.15);
+  border-radius: 5px;
+}
+
+.header-provider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-left: 53px;
+  margin-right: 53px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.38em;
+  text-align: center;
+
+  color: #6e788d;
+}
+
+.header-provider::after {
+  margin-top: 17px;
+  margin-bottom: 26px;
+
+  content: "";
+  width: 105px;
+  height: 1px;
+
+  background-color: #9ca3ab;
+}
+.provider-items {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  &:hover .border {
+    transform: rotate(360deg);
+  }
+}
+
+.provider-items:last-child {
+  margin-bottom: 0;
+}
+
+.border {
+  margin-left: 9px;
+  margin-right: 19px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top right, #86bc42, transparent);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  transition: 250ms linear;
+}
+
+.num-provider {
+  position: relative;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #86bc42;
+}
+
+.provider-name {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19em;
+
+  text-decoration-line: underline;
+
+  color: #9ca3ab;
+}

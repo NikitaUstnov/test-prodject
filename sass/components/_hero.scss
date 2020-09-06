@@ -28,13 +28,34 @@
       }
     }
   }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../../img/desctop-hero.jpg);
+    min-width: 1280px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero-bg {
+        background-image: url(../img/desctop-hero@2x.jpg);
+      }
+    }
+  }
 }
 
 .hero-container {
   padding-top: 25px;
   padding-bottom: 27px;
-  // padding-right: 15px;
-  // padding-left: 15px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
 }
 
 .reg-window {
@@ -44,7 +65,7 @@
   padding-bottom: 19px;
 
   background: rgba(47, 45, 55, 0.25);
-  border-radius: 3.70238px;
+  border-radius: 4px;
 
   &::before {
     content: "";
@@ -54,7 +75,14 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 34px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 136px;
+    padding-right: 136px;
+    margin-right: 152px;
+    margin-left: 152px;
   }
 }
 
@@ -71,12 +99,16 @@
       content: "";
       width: 74px;
       height: 1px;
-      background-color: red;
+      background-color: #fff;
 
       position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(-125% 299%);
+      top: 25px;
+      left: -95px;
+
+      @media screen and (min-width: 1280px) {
+        top: 35px;
+        left: -105px;
+      }
     }
   }
 }
@@ -95,6 +127,10 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+  }
 }
 .descr-reg-list {
   position: relative;
@@ -108,14 +144,27 @@
 .descr-reg-icon1 {
   width: 41px;
   height: 41px;
+
+  @media screen and (min-width: 1280px) {
+    width: 56px;
+    height: 56px;
+  }
 }
 .descr-reg-icon2 {
   width: 44px;
   height: 44px;
+  @media screen and (min-width: 1280px) {
+    width: 59px;
+    height: 59px;
+  }
 }
 .descr-reg-icon3 {
   width: 41px;
   height: 41px;
+  @media screen and (min-width: 1280px) {
+    width: 55px;
+    height: 55px;
+  }
 }
 
 .num {
@@ -130,6 +179,12 @@
   font-size: 18px;
   line-height: 22px;
   color: #fff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+
+    transform: translate(-15px, -12px);
+  }
 }
 
 .reg-window-header {
@@ -139,14 +194,29 @@
   font-weight: 900;
   font-size: 21px;
   text-align: center;
+  letter-spacing: 0.025em;
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 27px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .reg-window-header span {
   font-family: "Open sans";
   font-size: 15px;
   text-align: center;
-
   color: #ffffff;
+  @media screen and (min-width: 768px) {
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .reg-form {
@@ -163,12 +233,17 @@
     padding: 11px 13px;
     margin-bottom: 35px;
   }
+  @media screen and (min-width: 1280px) {
+    padding: 14px 18px;
+    margin-bottom: 47px;
+  }
 }
 
 .reg-form-items-name {
   width: 100%;
   max-width: 114px;
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:1280px) {
+    max-width: 154px;
   }
 }
 
@@ -178,6 +253,9 @@
   // max-width: 162px;
   @media screen and(min-width:768px) {
     margin-left: 16px;
+  }
+  @media screen and(min-width:1280px) {
+    margin-left: 22px;
   }
 }
 
@@ -197,6 +275,13 @@
     font-size: 12px;
     line-height: 15px;
     color: #6e788d;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 41px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
   }
 }
 // mob button
@@ -265,6 +350,15 @@
   text-transform: uppercase;
 
   color: #ffffff;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 22px;
+
+    width: 117px;
+    height: 41px;
+
+    font-size: 14px;
+  }
   @media screen and (max-width: 767px) {
     display: none;
   }

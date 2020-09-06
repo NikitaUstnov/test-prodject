@@ -1,16 +1,125 @@
+.objects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header-objects {
-    margin-bottom: 13px;
-    
-    
-    font-family: 'Open sans';
-    font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+
+  color: #6e788d;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+}
+
+.header-objects::before {
+  margin-top: 27px;
+  margin-bottom: 13px;
+
+  content: "";
+  width: 105px;
+  height: 1px;
+
+  background-color: #9ca3ab;
+  @media screen and (min-width: 768px) {
+    margin-top: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 55px;
+  }
+}
+
+.objects-text {
+  margin-right: 9px;
+  margin-left: 9px;
+  margin-top: 13px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29em;
+  letter-spacing: 0.01em;
+  text-align: center;
+
+  color: #9ca3ab;
+  @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    
-    color: #6E788D;
-    }
-    
-    
-    
+    margin-right: 7px;
+    margin-left: 3px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-right: 7px;
+    margin-left: 3px;
+  }
+}
+
+.img-houses {
+  margin-bottom: 39px;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 19px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    grid-gap: 31px;
+    margin-bottom: 0;
+  }
+}
+
+.img-for-all-dev {
+  margin-top: 25px;
+}
+
+.scroll {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.scroll-points {
+  display: inline-flex;
+  align-items: center;
+
+  margin: 21px 56px;
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+}
+
+.scroll-points svg {
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.scroll-btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  font-family: none;
+  font-size: 0;
+  line-height: 0;
+
+  background-color: transparent;
+}
