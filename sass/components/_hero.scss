@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 374px;
   height: auto;
-  background-image: url(../../img/mob-hero.jpg);
+  background-image: url(../img/mob-hero.jpg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -12,12 +12,12 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-bg {
-      background-image: url(../../img/mob-hero@2x.jpg);
+      background-image: url(../img/mob-hero@2x.jpg);
     }
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url(../../img/tablet-hero.jpg);
+    background-image: url(../img/tablet-hero.jpg);
     min-width: 768px;
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -30,7 +30,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../../img/desctop-hero.jpg);
+    background-image: url(../img/desctop-hero.jpg);
     min-width: 1280px;
 
     @media screen and (min-device-pixel-ratio: 2),
