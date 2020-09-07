@@ -1466,12 +1466,38 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left-plant {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -999;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 @media screen and (min-width: 768px) {
-  .last-news-section {
-    margin-left: 95px;
-    margin-right: 95px;
+  .left-plant {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .left-plant {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .last-news-container {
+    padding-right: 65px;
+    padding-left: 65px;
   }
 }
 
@@ -1483,6 +1509,14 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .left-plant-desk,
+  .left-plant-mob {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .left-plant-tab,
   .left-plant-mob {
     display: none;
   }
@@ -1514,7 +1548,7 @@ a {
 @media screen and (min-width: 768px) {
   .last-news-header {
     font-size: 20px;
-    margin-bottom: 47px;
+    margin-bottom: 68px;
   }
 }
 
@@ -1531,6 +1565,18 @@ a {
   width: 105px;
   height: 1px;
   background-color: #9ca3ab;
+}
+
+@media screen and (min-width: 768px) {
+  .last-news-header::before {
+    margin-top: 47px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .last-news-header::before {
+    margin-top: 50px;
+  }
 }
 
 .news {
@@ -1555,6 +1601,16 @@ a {
   color: #6e788d;
 }
 
+@media screen and (min-width: 768px) {
+  .news-description {
+    padding: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 150px;
+  }
+}
+
 .news-description::before {
   content: "";
   position: absolute;
@@ -1563,6 +1619,13 @@ a {
   width: 33px;
   height: 3px;
   background-color: #86bc42;
+}
+
+@media screen and (min-width: 768px) {
+  .news-description::before {
+    width: 102px;
+    top: 135px;
+  }
 }
 
 .mob-building {
@@ -1599,6 +1662,16 @@ a {
   }
   .mob-building {
     display: none;
+  }
+}
+
+.news-inform {
+  margin-top: 22px;
+}
+
+@media screen and (min-width) {
+  .news-inform {
+    margin-top: 39px;
   }
 }
 
