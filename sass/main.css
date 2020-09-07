@@ -1270,7 +1270,7 @@ a {
   width: 100%;
   min-width: 375px;
   height: auto;
-  background-image: url(../../img/plant-bg.jpg);
+  background-image: url("../img/plant-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1278,33 +1278,33 @@ a {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .price-bg .hero-bg {
-    background-image: url(../../img/plant-bg@x2.jpg);
+    background-image: url("../img/plant-bg@x2.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .price-bg {
-    background-image: url(../../img/tab-plant-bg.jpg);
+    background-image: url("../img/tab-plant-bg.jpg");
     min-width: 768px;
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price-bg .hero-bg {
-    background-image: url(../img/tab-plant-bg@2x.jpg);
+    background-image: url("../img/tab-plant-bg@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1280px) {
   .price-bg {
-    background-image: url(../../img/deck-plant-bg.jpg);
+    background-image: url("../img/deck-plant-bg.jpg");
     min-width: 1280px;
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price-bg .hero-bg {
-    background-image: url(../img/deck-plant-bg@2x.jpg);
+    background-image: url("../img/deck-plant-bg@2x.jpg");
   }
 }
 
