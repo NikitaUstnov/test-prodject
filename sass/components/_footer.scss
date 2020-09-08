@@ -86,15 +86,8 @@
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 28px;
-}
-
-.nav-list {
-  margin-right: 50px;
-}
-
-.nav-list:last-child {
-  margin-right: 0;
 }
 
 .nav-list-link {
@@ -114,11 +107,10 @@
     display: block;
 
     margin-right: 8px;
-    margin-bottom: 1px;
 
     width: 5px;
     height: 8px;
-    background-image: url("../../img/arrow-footer.svg");
+    background-image: url("../img/arrow-footer.svg");
     fill: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,6 +120,10 @@
 .nav-list-link:hover,
 .nav-list-link:focus {
   color: #86bc42;
+
+  &:before {
+    background-image: url("../img/arrow-footer-green.svg");
+  }
 }
 
 .contacts-list {

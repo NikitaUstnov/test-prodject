@@ -30,6 +30,10 @@
     padding-right: 95px - 30px;
     padding-left: 95px - 30px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+  }
 }
 .left-plant-tab,
 .left-plant-desk {
@@ -96,6 +100,14 @@
 
   @media screen and (min-width: 1280px) {
     margin-top: 50px;
+    margin-bottom: 18px;
+  }
+}
+
+.last-nes-wapper {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -126,6 +138,10 @@
     padding-right: 150px;
   }
 
+  @media screen and(min-width:1280px) {
+    margin-bottom: 38px;
+    margin-top: 31px;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -140,6 +156,10 @@
     @media screen and (min-width: 768px) {
       width: 102px;
       top: 135px;
+    }
+
+    @media screen and(min-width:1280px) {
+      width: 67px;
     }
   }
 }
@@ -173,19 +193,29 @@
   .tab-building {
     display: none;
   }
-  .deck-building {
-    display: block;
-  }
+
   .mob-building {
     display: none;
+  }
+
+  .deck-building {
+    display: block;
+
+    margin-right: -130px;
+    padding-right: 0;
   }
 }
 
 .news-inform {
   margin-top: 22px;
 
-  @media screen and (min-width) {
+  @media screen and (min-width: 768px) {
     margin-top: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 470px;
+    margin-left: 68px;
+    margin-top: 0;
   }
 }
 
@@ -194,6 +224,10 @@
 
   &:last-child {
     margin-bottom: 22px;
+
+    @media screen and(min-width:1280px) {
+      margin-bottom: 40px;
+    }
   }
 
   font-size: 14px;
@@ -210,6 +244,13 @@
 
   & svg {
     margin-left: 12px;
+  }
+
+  @media screen and(min-width:1280px) {
+    margin-right: auto;
+    margin-left: 0;
+
+    margin-bottom: 41px;
   }
 }
 
@@ -231,6 +272,10 @@
   margin-left: auto;
 
   @media screen and (min-width: 768px) {
+    margin-top: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 33px;
   }
 }
 
