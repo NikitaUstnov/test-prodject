@@ -1825,7 +1825,8 @@ a {
 @media screen and (min-width: 1280px) {
   .news-description {
     margin-bottom: 38px;
-    margin-top: 31px;
+    margin-top: 66px;
+    width: 510px;
   }
 }
 
@@ -1885,9 +1886,16 @@ a {
     display: none;
   }
   .deck-building {
+    position: absolute;
     display: block;
-    margin-right: -70px;
+    right: 0;
     padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .news {
+    margin-right: auto;
   }
 }
 
