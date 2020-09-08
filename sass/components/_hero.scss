@@ -67,12 +67,11 @@
   background: rgba(47, 45, 55, 0.25);
   border-radius: 4px;
 
-  &::before {
-    content: "";
-    z-index: 10;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-  }
+  backdrop-filter: blur(6px);
+
+  // &::before {
+  //   content: "";
+  //   z-index: 10;
 
   @media screen and (min-width: 768px) {
     padding-left: 100px;
@@ -192,7 +191,7 @@
 
   font-family: "Open sans";
   font-weight: 900;
-  font-size: 21px;
+  font-size: 20px;
   text-align: center;
   letter-spacing: 0.025em;
   color: #ffffff;

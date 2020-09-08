@@ -3,9 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .left-plant {
@@ -204,7 +201,6 @@
     display: block;
     right: 0;
 
-    // margin-right: -70px;
     padding-right: 0;
   }
 }
