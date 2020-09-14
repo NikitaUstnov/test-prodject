@@ -76,6 +76,9 @@
   @media screen and (min-width: 768px) {
     padding-left: 100px;
     padding-right: 100px;
+
+    margin-left: 73px - 30px;
+    margin-right: 73px - 30px;
   }
   @media screen and (min-width: 1280px) {
     padding-left: 136px;
@@ -182,7 +185,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 24px;
 
-    transform: translate(-15px, -12px);
+    transform: translate(-20px, -12px);
   }
 }
 
@@ -249,19 +252,20 @@
 .reg-form-items-tel {
   margin-left: 11px;
   width: 100%;
-  // max-width: 162px;
+  max-width: 162px;
   @media screen and(min-width:768px) {
     margin-left: 16px;
   }
   @media screen and(min-width:1280px) {
     margin-left: 22px;
+    max-width: 219px;
   }
 }
 
 .reg-form-items {
   height: 30px;
-  // padding-top: 8px;
-  // padding-bottom: 6px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   padding-left: 11px;
 
   background: #ffffff;
@@ -277,6 +281,8 @@
   }
   @media screen and (min-width: 1280px) {
     height: 41px;
+
+  padding-top: 11px;
 
     &::placeholder {
       font-size: 14px;

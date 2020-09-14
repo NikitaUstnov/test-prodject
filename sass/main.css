@@ -444,6 +444,8 @@ a {
   .reg-window {
     padding-left: 100px;
     padding-right: 100px;
+    margin-left: 43px;
+    margin-right: 43px;
   }
 }
 
@@ -586,8 +588,8 @@ a {
 @media screen and (min-width: 1280px) {
   .num {
     font-size: 24px;
-    -webkit-transform: translate(-15px, -12px);
-            transform: translate(-15px, -12px);
+    -webkit-transform: translate(-20px, -12px);
+            transform: translate(-20px, -12px);
   }
 }
 
@@ -670,6 +672,7 @@ a {
 .reg-form-items-tel {
   margin-left: 11px;
   width: 100%;
+  max-width: 162px;
 }
 
 @media screen and (min-width: 768px) {
@@ -681,11 +684,14 @@ a {
 @media screen and (min-width: 1280px) {
   .reg-form-items-tel {
     margin-left: 22px;
+    max-width: 219px;
   }
 }
 
 .reg-form-items {
   height: 30px;
+  padding-top: 8px;
+  padding-bottom: 6px;
   padding-left: 11px;
   background: #ffffff;
   border: 1px solid #6e788d;
@@ -723,6 +729,7 @@ a {
 @media screen and (min-width: 1280px) {
   .reg-form-items {
     height: 41px;
+    padding-top: 11px;
   }
   .reg-form-items::-webkit-input-placeholder {
     font-size: 14px;
@@ -1192,17 +1199,13 @@ a {
           align-items: center;
   margin-left: 9px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
   .provider-items {
     margin-left: 48px;
   }
-}
-
-.provider-items:hover .border {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
 }
 
 .provider-items:last-child {
@@ -1630,8 +1633,8 @@ a {
 .form-radio label:before {
   content: "";
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   margin-right: 9px;
   border: 0.7px solid #86bc42;
   border-radius: 100%;
@@ -1676,8 +1679,8 @@ a {
 
 @media screen and (min-width: 1280px) {
   .left-plant {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -1712,6 +1715,12 @@ a {
   .left-plant-tab,
   .left-plant-mob {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .left-plant-desk {
+    display: block;
   }
 }
 
@@ -1942,7 +1951,7 @@ a {
 @media screen and (min-width: 1280px) {
   .read-more {
     margin-right: auto;
-    margin-left: 0;
+    margin-left: 68px;
     margin-bottom: 41px;
   }
 }
@@ -2210,10 +2219,11 @@ a {
 
 @media screen and (min-width: 1280px) {
   .footer-dark {
-    width: 930px;
+    min-width: 930px;
     padding-left: 80px;
     padding-right: unset;
     padding-top: 24px;
+    width: 100%;
   }
 }
 

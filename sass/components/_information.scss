@@ -181,12 +181,15 @@
   margin-left: 9px;
   margin-bottom: 30px;
 
+  cursor: pointer;
+
   @media screen and(min-width:768px) {
     margin-left: 48px;
   }
 
   &:hover .border {
-    transform: rotate(360deg);
+    // transform: rotate(360deg);
+    
   }
 }
 
@@ -225,6 +228,8 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19em;
+
+  
 
   text-decoration-line: underline;
 
