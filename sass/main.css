@@ -1642,7 +1642,7 @@ a {
 
 /* Checked */
 .form-radio input[type="radio"]:checked + label:before {
-  background: url("../../img/checked.svg") 0 0 no-repeat;
+  background: url("../img/checked.svg") 0 0 no-repeat;
   background-size: 6.3px 6.3px;
   background-position: center;
 }
